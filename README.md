@@ -1,9 +1,14 @@
-# React + Vite
+# Instrucciones: Realice lo que se le pide.
+## Serie I (40pts): Responda las siguientes preguntas que econtrara en el enlace: 
+[prueba](https://forms.gle/8ozcEP7haJcyFRC57)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Serie II (60pts):
 
-Currently, two official plugins are available:
+1. Realice un fork de este repositorio. 
+2. Instale las dependencias.
+3. Resuleva las incidencias de los archivos pruba01, prueba02, prueba03.
+4. Agregue capturas de pantalla del resultado final.
+5. Envie un correo con con el enlace de su repositorio y los siguientes datos. 
+    Destinarios: programador_en@ciancoders.dev, carlos@ciancoders.dev
+    Asunto: Evaluacion-frontend23.1
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# evaluacion-frontend
