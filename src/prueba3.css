@@ -1,0 +1,25 @@
+@charset "utf-8";
+.padre{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.tarjeta{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:420px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  font-family: sans-serif;
+}
+.titulo{
+  font-size: 24px;
+  padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+  padding: 10px;
+}
+

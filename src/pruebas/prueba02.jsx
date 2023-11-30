@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
-
 
 class Formulario extends Component {
   constructor(props) {
@@ -12,17 +10,11 @@ class Formulario extends Component {
     };
   }
 
-  syncEmailChanges(email) {
+  syncInputChange = (fieldName, value) => {
     this.setState({
-      email: email
+      [fieldName]: value
     });
-  }
-
-  syncPasswordChanges(password) {
-    this.setState({
-      password: password
-    });
-  }
+  };
 
   submitForm = () => {
     console.log(this.state);
@@ -32,27 +24,23 @@ class Formulario extends Component {
     return (
       <form>
         <input
-          onChange={ev => {
-            this.syncEmailChanges(ev.target.value);
-          }}
+          onChange={(ev) => this.syncInputChange("email", ev.target.value)}
           type="email"
           value={this.state.email}
           placeholder="Email"
         />
+        <br />
+        <br />
         <input
-          onChange={ev => {
-            this.syncPasswordChanges(ev.target.value);
-          }}
+          onChange={(ev) => this.syncInputChange("password", ev.target.value)}
           type="password"
           value={this.state.password}
           placeholder="*********"
         />
+        <br />
+        <br />
         <div>
-          <input
-            onClick={this.submitForm}
-            type="submit"
-            value="Iniciar sesión"
-          />
+          <input onClick={this.submitForm} type="submit" value="Iniciar sesión" />
         </div>
       </form>
     );
@@ -62,10 +50,12 @@ class Formulario extends Component {
 export default function FormularioApp() {
   return (
     <div>
-        <h1>Prueba 02</h1>
-        <p>1. Optimice el siguiente  componente de clase  para que solo tenga
-        un método de sincronización, para actualizar los valores de los
-        identificadores email y password en el estado del componente</p>
+      <h1>Prueba 02</h1>
+      <p>
+        1. Optimice el siguiente componente de clase para que solo tenga un
+        método de sincronización, para actualizar los valores de los
+        identificadores email y password en el estado del componente
+      </p>
       <Formulario />
     </div>
   );

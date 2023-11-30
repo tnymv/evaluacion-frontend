@@ -16,12 +16,20 @@ class Contador extends Component {
       contador: this.state.contador + 1
     });
   };
+  recetear = ()=>{
+    this.setState({
+      contador : this.state.contador = 0
+    });
+  }
 
   render() {
     return (
       <div>
         <p>{this.state.contador}</p>
         <button onClick={this.aumentar}>Aumentar</button>
+        <br />
+        <br />
+        <button onClick={this.recetear}>Reiniciar</button>
       </div>
     );
   }
