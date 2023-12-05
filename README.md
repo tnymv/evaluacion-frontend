@@ -1,5 +1,5 @@
 # Evaluación Frontend.
-## Luis Daniel Reyes López
+## Edwin Tony Mejia
 
 ## prueba 01 y prueba 02
 ![Descripción de la imagen](/src/img/image1.png)
